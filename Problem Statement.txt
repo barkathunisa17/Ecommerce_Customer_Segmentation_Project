@@ -1,0 +1,80 @@
+E-Commerce Customer Segmentation Using Machine Learning
+
+Problem Statement
+
+Modern e-commerce businesses generate large volumes of customer data through purchases, browsing behavior, and transaction history. Treating all customers the same way makes marketing and retention strategies less effective. It is difficult to manually identify which customers are high-value, frequent, occasional, or at risk of leaving. Therefore, a data-driven technique is required to group customers based on purchasing behavior. This project uses RFM Analysis (Recency, Frequency, Monetary) along with K-Means Clustering to segment customers and visualize their patterns.
+
+Objective
+
+To analyze customer transaction data and group customers into meaningful segments using RFM analysis and K-Means clustering, in order to support personalized marketing and better retention strategies.
+
+Requirements
+
+1. Software Requirements
+   - Python
+
+2. Python Libraries
+   - pandas
+   - numpy
+   - matplotlib
+   - seaborn
+   - scikit-learn
+
+Project Workflow
+
+Transaction Dataset -> Data Collection -> Data Cleaning ->
+Exploratory Data Analysis -> Feature Engineering (RFM) ->
+Handle Missing Values -> Standardization -> Apply K-Means ->
+Determine Optimal Clusters (Elbow Method) ->
+Visualize Clusters -> Interpret Customer Segments -> Conclusion
+
+RFM Methodology
+
+What is RFM?
+RFM is a technique used to analyze customer value based on three factors calculated from transaction data.
+
+Why RFM?
+
+Raw transaction data
+        |
+Hard to compare customers directly
+        |
+     RFM
+        |
+3 simple scores per customer
+        |
+Easy to group & compare
+
+RFM Components
+
+Component        Meaning
+Recency (R)       How recently the customer purchased
+Frequency (F)     How often the customer purchases
+Monetary (M)      How much the customer has spent
+
+Dataset Description
+
+- Dataset name
+- Number of rows
+- Number of columns
+- Features (CustomerID, InvoiceDate, Quantity, UnitPrice, etc.)
+- Data types
+- Missing values
+- Duplicate values
+
+Data Preprocessing
+
+1. Missing value handling
+2. Duplicate removal
+3. Feature engineering - calculate R, F, M values per customer
+4. Standardization - scales R, F, M so no single feature dominates clustering
+
+Clustering Methodology
+
+- Apply K-Means Clustering on standardized RFM values
+- Use Elbow Method / Silhouette Score to find the optimal number of clusters
+- Assign each customer to a cluster (segment)
+
+Conclusion
+
+The overall aim of this project is to segment e-commerce customers based on their purchasing behavior using RFM analysis and K-Means clustering. The project helps identify high-value, loyal, and at-risk customers, enabling businesses to design targeted marketing strategies and improve customer retention.
